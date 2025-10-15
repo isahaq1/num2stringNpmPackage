@@ -1,6 +1,6 @@
 {
     "name": "@isahaq/numbertostring",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "description": "A npm package for converting numbers to words in multiple languages including English, Bangla, French, Urdu, Chinese, Hindi, and Spanish",
     "main": "index.js",
     "keywords": [
