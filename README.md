@@ -1,6 +1,7 @@
 # @isahaq/numbertostring
 
 [![npm version](https://img.shields.io/npm/v/@isahaq/numbertostring.svg)](https://www.npmjs.com/package/@isahaq/numbertostring)
+[![License](https://img.shields.io/npm/l/@isahaq/numbertostring.svg)](https://github.com/yourusername/numbertostring/blob/main/LICENSE)
 [![Downloads](https://img.shields.io/npm/dm/@isahaq/numbertostring.svg)](https://www.npmjs.com/package/@isahaq/numbertostring)
 
 A powerful and flexible multilingual **number-to-words converter** supporting multiple languages with an easy-to-use API.
@@ -35,94 +36,19 @@ pnpm add @isahaq/numbertostring
 ## 🎯 Quick Start
 
 ```javascript
-const { numberToWords } = require("@isahaq/numbertostring");
+const NumberToString = require("@isahaq/numbertostring");
 
-// Basic usage
-console.log(numberToWords(123));
-// Output: "one hundred twenty-three"
+// Create an instance of the converter
+const converter = new NumberToString();
 
-// With language option
-console.log(numberToWords(123, { language: "bn" }));
-// Output: "একশত তেইশ"
-
-// Currency format
-console.log(numberToWords(1234.56, { language: "en", currency: true }));
-// Output: "one thousand two hundred thirty-four dollars and fifty-six cents"
-```
-
-## 📖 Usage
-
-### Basic Number Conversion
-
-```javascript
-const { numberToWords } = require("@isahaq/numbertostring");
-
-// English (default)
-numberToWords(42);
-// "forty-two"
-
-// Bangla
-numberToWords(42, { language: "bn" });
-// "বিয়াল্লিশ"
-
-// French
-numberToWords(42, { language: "fr" });
-// "quarante-deux"
-
-// Spanish
-numberToWords(42, { language: "es" });
-// "cuarenta y dos"
-
-// Hindi
-numberToWords(42, { language: "hi" });
-// "बयालीस"
-
-// Urdu
-numberToWords(42, { language: "ur" });
-// "بیالیس"
-
-// Chinese
-numberToWords(42, { language: "zh" });
-// "四十二"
-```
-
-### Large Numbers
-
-```javascript
-numberToWords(1234567890);
-// "one billion two hundred thirty-four million five hundred sixty-seven thousand eight hundred ninety"
-
-numberToWords(1234567890, { language: "bn" });
-// "একশত তেইশ কোটি পঁয়তাল্লিশ লক্ষ সাতষট্টি হাজার আটশত নব্বই"
-```
-
-### Currency Conversion
-
-```javascript
-numberToWords(1234.56, {
-  language: "en",
-  currency: true,
-  currencyUnit: "dollar",
-});
-// "one thousand two hundred thirty-four dollars and fifty-six cents"
-
-numberToWords(5000, {
-  language: "bn",
-  currency: true,
-  currencyUnit: "taka",
-});
-// "পাঁচ হাজার টাকা"
-```
-
-### Custom Options
-
-```javascript
-numberToWords(100, {
-  language: "en",
-  titleCase: true,
-  ordinal: false,
-  currency: false,
-});
+// Convert numbers to different languages
+console.log(converter.convertEn(12345)); // twelve thousand three hundred and forty five
+console.log(converter.convertBn(12345)); // বারো হাজার তিন শত পঁয়তাল্লিশ
+console.log(converter.convertFr(12345)); // douze mille trois cent quarante-cinq
+console.log(converter.convertUr(12345)); // بارہ ہزار تین سو پینتالیس
+console.log(converter.convertZh(12345)); // 一万二千三百四十五
+console.log(converter.convertHi(12345)); // बारह हज़ार तीन सौ पैंतालीस
+console.log(converter.convertEs(12345)); // doce mil trescientos cuarenta y cinco
 ```
 
 ## 🌐 Supported Languages
@@ -159,6 +85,14 @@ Converts a number to its word representation.
 
 ## 🤝 Contributing
 
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -167,6 +101,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Isahaq**
 
+- GitHub: [@yourusername](https://github.com/isahaq1)
 - npm: [@isahaq](https://www.npmjs.com/~isahaq)
 
 ## 🙏 Acknowledgments
@@ -176,6 +111,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Support
 
-## If you found this project helpful, please give it a ⭐️!
+If you found this project helpful, please give it a ⭐️!
+
+For issues and feature requests, please use the [GitHub issue tracker](https://github.com/isahaq1/numbertostring/issues).
+
+---
 
 Made with ❤️ by Isahaq
