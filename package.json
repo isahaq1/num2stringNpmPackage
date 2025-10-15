@@ -1,0 +1,24 @@
+{
+    "name": "@isahaq/numbertostring",
+    "version": "2.2.0",
+    "description": "A npm package for converting numbers to words in multiple languages including English, Bangla, French, Urdu, Chinese, Hindi, and Spanish",
+    "main": "index.js",
+    "keywords": [
+        "number2string",
+        "number-to-words",
+        "multilingual",
+        "english",
+        "bangla",
+        "french",
+        "urdu",
+        "chinese",
+        "hindi",
+        "spanish",
+        "number",
+        "string",
+        "converter",
+        "multilingual"
+    ],
+    "author": "Isahaq",
+    "license": "MIT"
+}
