@@ -101,7 +101,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Isahaq**
 
-- GitHub: [@yourusername](https://github.com/isahaq1)
+- GitHub: [@isahaq1](https://github.com/isahaq1)
 - npm: [@isahaq](https://www.npmjs.com/~isahaq)
 
 ## 🙏 Acknowledgments
