@@ -37,6 +37,8 @@ pnpm add @isahaq/numbertostring
 
 ```javascript
 const NumberToString = require("@isahaq/numbertostring");
+or;
+import NumberToString from "@isahaq/numbertostring";
 
 // Create an instance of the converter
 const converter = new NumberToString();

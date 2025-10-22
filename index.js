@@ -416,19 +416,19 @@ class NumberToString {
 
         const units = [{
                 value: 10000000,
-                name: "কোটি"
+                name: "কোটি",
             },
             {
                 value: 100000,
-                name: "লক্ষ"
+                name: "লক্ষ",
             },
             {
                 value: 1000,
-                name: "হাজার"
+                name: "হাজার",
             },
             {
                 value: 100,
-                name: "শত"
+                name: "শত",
             },
         ];
 
@@ -465,7 +465,7 @@ class NumberToString {
             }
         }
 
-        return result.trim();
+        return result.trim().normalize("NFC");
     }
 
     /**
